@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mandalorian - Series</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+<!-- Header -->
+<header class="bg-gray-800 py-4 px-6 fixed w-full top-0 z-50">
+    <nav class="flex justify-between items-center">
+        <h1 class="text-2xl font-bold">The Mandalorian</h1>
+        <div class="text-sm">
+            <span id="temporadas-count">Temporadas: 0</span> |
+            <span id="capitulos-count">Capítulos: 0</span>
+        </div>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main class="container mx-auto pt-20 px-4">
+    <!-- Serie Info -->
+    <section id="serie-info" class="mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <img id="serie-poster" src="" alt="The Mandalorian Poster" class="w-full rounded-lg shadow-xl">
+            </div>
+            <div>
+                <h2 id="serie-titulo" class="text-4xl font-bold mb-4"></h2>
+                <p id="serie-creador" class="text-xl mb-2"></p>
+                <p id="serie-clasificacion" class="mb-2"></p>
+                <p id="serie-descripcion" class="text-gray-300"></p>
+                <div class="mt-4">
+                    <p>Año de emisión: <span id="serie-anio"></span></p>
+                    <p>Número de temporadas: <span id="serie-temporadas"></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Temporadas -->
+    <section id="temporadas" class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">Temporadas</h2>
+        <div id="temporadas-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Las temporadas se cargarán dinámicamente aquí -->
+        </div>
+    </section>
+
+    <!-- Capítulos -->
+    <section id="capitulos" class="mb-12 hidden">
+        <h2 class="text-3xl font-bold mb-6">Capítulos</h2>
+        <div id="capitulos-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Los capítulos se cargarán dinámicamente aquí -->
+        </div>
+    </section>
+
+    <!-- Personajes -->
+    <section id="personajes" class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">Personajes Principales</h2>
+        <div id="personajes-container" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Los personajes se cargarán dinámicamente aquí -->
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-800 py-6 px-4">
+    <div class="container mx-auto text-center text-gray-400">
+        <p>Desarrollado por Samuel Vergara</p>
+        <p>Creado el 3 de noviembre del 2024</p>
+        <p>Ejercicio de desarrollo web con Spring Boot y API REST</p>
+    </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
